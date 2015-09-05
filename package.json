@@ -1,0 +1,27 @@
+{
+  "name": "angular-precommit",
+  "main": "index.js",
+  "version": "0.0.0",
+  "description": "Pre commit with angular conventions",
+  "license": "MIT",
+  "repository": "ajoslin/angular-precommit",
+  "bin": "./index.js",
+  "author": {
+    "name": "Andrew Joslin",
+    "email": "andrewtjoslin@gmail.com",
+    "url": "ajoslin.com"
+  },
+  "scripts": {
+    "test": "standard && tape test.js"
+  },
+  "keywords": [
+    "precommit"
+  ],
+  "devDependencies": {
+    "tape": "^4.0.0",
+    "standard": "^4.0.0"
+  },
+  "files": [
+    "index.js"
+  ]
+}
