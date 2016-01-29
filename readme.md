@@ -5,6 +5,6 @@
 ## Install
 
 ```
-$ npm install --save angular-precommit
+$ npm install angular-precommit --save-dev
 $ ln -s node_modules/angular-precommit/index.js .git/hooks/commit-msg
 ```
