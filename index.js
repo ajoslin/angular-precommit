@@ -20,12 +20,21 @@ var TYPES = {
   revert: true
 }
 
+var reminder = [
+  'REMINDER:',
+  '- MAX_LENGTH is: ' + MAX_LENGTH,
+  '- allowed types are: ' + Object.keys(TYPES).join(' | '),
+  '- ignore validation with: WIP'
+].join('\n')
+
 
 function displayError () {
   // gitx does not display it
   // http://gitx.lighthouseapp.com/projects/17830/tickets/294-feature-display-hook-error-message-when-hook-fails
   // https://groups.google.com/group/gitx/browse_thread/thread/a03bcab60844b812
   console.error('INVALID COMMIT MSG: ' + util.format.apply(null, arguments))
+  console.log(reminder)
+  
 }
 
 
